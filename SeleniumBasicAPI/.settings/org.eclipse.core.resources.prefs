@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/logigear/selenium/pageobjects/railway/TicketPricePage.java=UTF-8
+encoding//src/main/java/com/logigear/selenium/pageobjects/railway/TimetablePage.java=UTF-8
+encoding//src/test/java/com/logigear/selenium/test/railway/TC04_TestNavigationsToBookTicketPage.java=UTF-8
+encoding//src/test/java/com/logigear/selenium/test/railway/TC05_TestFunctionsBookTicketAndManageticket.java=UTF-8
+encoding//src/test/java/com/logigear/selenium/test/railway/TC05_TestFunctionsBookTicketAndManageticket_DataDriven.java=UTF-8
