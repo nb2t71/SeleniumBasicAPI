@@ -1,13 +1,22 @@
 package com.logigear.selenium.pageobjects.railway;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.logigear.selenium.constant.Constant;
 import com.logigear.selenium.pageobjects.gmail.GMailLoginPage;
 
 public class GeneralPage {
-
+//	private WebDriver driverGeneralPage;
+//	public GeneralPage() {
+//		
+//	}
+//	
+//	public GeneralPage(WebDriver driver) {
+//		//super();
+//		this.driverGeneralPage = driver;
+//	}
 	//Locators
 	private final By tabLogin = By.xpath("//div[@id='menu']//a[@href='/Account/Login.cshtml']");
 	private final By tabLogout = By.xpath("//div[@id='menu']//a[@href='/Account/Logout']");
@@ -21,39 +30,39 @@ public class GeneralPage {
 	
 	//Elements
 	protected WebElement getTabLogin() {
-		return Constant.WEBDRIVER.findElement(tabLogin);
+		return Constant.getWebDriver().findElement(tabLogin);
 	}
 	
 	protected WebElement getTabLogout() {
-		return Constant.WEBDRIVER.findElement(tabLogout);
+		return Constant.getWebDriver().findElement(tabLogout);
 	}
 	
 	protected WebElement getTabRegister() {
-		return Constant.WEBDRIVER.findElement(tabRegister);
+		return Constant.getWebDriver().findElement(tabRegister);
 	}
 	
 	protected WebElement getTabChangePassword() {
-		return Constant.WEBDRIVER.findElement(tabChangePassword);
+		return Constant.getWebDriver().findElement(tabChangePassword);
 	}
 	
 	protected WebElement getLblWelcomeMessage() {
-		return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
+		return Constant.getWebDriver().findElement(lblWelcomeMessage);
 	}
 	
 	protected WebElement getTabBookTicket() {
-		return Constant.WEBDRIVER.findElement(tabBookTicket);
+		return Constant.getWebDriver().findElement(tabBookTicket);
 	}
 	
 	protected WebElement getTabTimetable() {
-		return Constant.WEBDRIVER.findElement(tabTimetable);
+		return Constant.getWebDriver().findElement(tabTimetable);
 	}
 	
 	protected WebElement getTabTicketPrice() {
-		return Constant.WEBDRIVER.findElement(tabTicketPrice);
+		return Constant.getWebDriver().findElement(tabTicketPrice);
 	}
 	
 	protected WebElement getTabMyTicket() {
-		return Constant.WEBDRIVER.findElement(tabMyTicket);
+		return Constant.getWebDriver().findElement(tabMyTicket);
 	}
 	
 	//Methods
@@ -77,7 +86,7 @@ public class GeneralPage {
 	}
 	
 	public GMailLoginPage gotoGMailLoginPage(String srtURL) {
-		Constant.WEBDRIVER.get(srtURL);
+		Constant.getWebDriver().get(srtURL);
 		return new GMailLoginPage();
 	}
 	

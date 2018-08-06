@@ -3,7 +3,6 @@ package com.logigear.selenium.test.railway;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -24,7 +23,7 @@ import com.logigear.selenium.pageobjects.railway.MyTicketPage;
  * TC14 - User can cancel a ticket
  */
 
-public class TC05_TestFunctionsBookTicketAndManageticket extends Precondition{
+public class TC05_TestFunctionsBookTicketAndManageticket extends Precondition_Invoked{
 	
 	String strMail = Constant.RAILWAY_ACC_MAIL;
 	String strPassword = Constant.RAILWAY_ACC_PASSWORD;
@@ -37,7 +36,7 @@ public class TC05_TestFunctionsBookTicketAndManageticket extends Precondition{
 
 	@Test
 	public void precondition() {
-		Precondition.preconditionCreateAndActiveAccount();
+		Precondition_Invoked.preconditionCreateAndActiveAccount();
 	}
 	
 	@Test(dependsOnMethods="precondition", dataProvider="DataForTC10_TC11")
@@ -138,10 +137,8 @@ public class TC05_TestFunctionsBookTicketAndManageticket extends Precondition{
 		MyTicketPage myticketpage = homepage.gotoMyTicketPage();
 		
 		// 5. Select "Paid" for "Status"
-		new Select(myticketpage.getCmbStatus()).selectByVisibleText("Paid");
-		
 		// 6. Click "Apply filter" button
-		myticketpage.getBtnApplyFilter().click();
+		myticketpage.filterTickets("", "", "", "Paid");
 		
 		// VP: "Manage ticket" table shows message "Sorry, can't find any results that match your filters.\nPlease change the filters and try again."
 		String actualMsg = myticketpage.getFitlerErrorMsg();
@@ -180,7 +177,7 @@ public class TC05_TestFunctionsBookTicketAndManageticket extends Precondition{
 		return new Object[][] {
             { "TC10 - User can book 1 ticket at a time", strDepartDate, strDepartFrom, strArriveAt, strSeatType, strTicketAmount },
             { "TC11 - User can book many tickets at a time", "8/11/2018", "Nha Trang", "Sài Gòn", "Soft bed with air conditioner", "5" },
-            { "Prepare data 3 for TC14 to TC17", "8/12/2018", "Huế", "�?à Nẵng", "Hard seat", "1" },
+            { "Prepare data 3 for TC14 to TC17", "8/12/2018", "Huế", "�?à Nẵng", "Hard seat", "1" },
             { "Prepare data 4 for TC14 to TC17", "8/13/2018", "Phan Thiết", "Nha Trang", "Hard bed", "1" },
             { "Prepare data 5 for TC14 to TC17", "8/14/2018", "Quảng Ngãi", "Huế", "Soft seat", "1" },
             { "Prepare data 6 for TC14 to TC17", "8/15/2018", "Sài Gòn", "Phan Thiết", "Hard seat", "1" }

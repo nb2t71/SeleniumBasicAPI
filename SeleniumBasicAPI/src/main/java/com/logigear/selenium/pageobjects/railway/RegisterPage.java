@@ -18,25 +18,25 @@ public class RegisterPage extends GeneralPage {
 
 	//Elements
 	protected WebElement getTxtEmail() {
-		return Constant.WEBDRIVER.findElement(txtEmail);
+		return Constant.getWebDriver().findElement(txtEmail);
 	}
 	protected WebElement getTxtPassword() {
-		return Constant.WEBDRIVER.findElement(txtPassword);
+		return Constant.getWebDriver().findElement(txtPassword);
 	}
 	protected WebElement getTxtConfirmPassword() {
-		return Constant.WEBDRIVER.findElement(txtConfirmPassword);
+		return Constant.getWebDriver().findElement(txtConfirmPassword);
 	}
 	protected WebElement getTxtPID() {
-		return Constant.WEBDRIVER.findElement(txtPID);
+		return Constant.getWebDriver().findElement(txtPID);
 	}
 	protected WebElement getBtnRegist() {
-		return Constant.WEBDRIVER.findElement(btnRegist);
+		return Constant.getWebDriver().findElement(btnRegist);
 	}
 	protected WebElement getLblThankYou() {
-		return Constant.WEBDRIVER.findElement(lblThankYou);
+		return Constant.getWebDriver().findElement(lblThankYou);
 	}
 	protected WebElement getLblRegisterErrorMsg() {
-		return Constant.WEBDRIVER.findElement(lblRegisterErrorMsg);
+		return Constant.getWebDriver().findElement(lblRegisterErrorMsg);
 	}
 	
 	//Methods

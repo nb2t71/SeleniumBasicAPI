@@ -1,12 +1,23 @@
 package com.logigear.selenium.pageobjects.railway;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.logigear.selenium.constant.Constant;
 
 public class LoginPage extends GeneralPage {
 
+//	private WebDriver driverLoginPage;
+//	public LoginPage() {
+//		
+//	}
+//	
+//	public LoginPage(WebDriver driver) {
+//		super();
+//		this.driverLoginPage = driver;
+//	}
+	
 	//Locators
 	private final By txtUsername = By.xpath("//input[@id='username']");
 	private final By txtPassword = By.xpath("//input[@id='password']");
@@ -15,19 +26,19 @@ public class LoginPage extends GeneralPage {
 	
 	//Elements
 	protected WebElement getTxtUsername() {
-		return Constant.WEBDRIVER.findElement(txtUsername);
+		return Constant.getWebDriver().findElement(txtUsername);
 	}
 	
 	protected WebElement getTxtPassword() {
-		return Constant.WEBDRIVER.findElement(txtPassword);
+		return Constant.getWebDriver().findElement(txtPassword);
 	}
 	
 	protected WebElement getBtnLogin() {
-		return Constant.WEBDRIVER.findElement(btnLogin);
+		return Constant.getWebDriver().findElement(btnLogin);
 	}
 	
 	protected WebElement getLblLoginErrorMssg() {
-		return Constant.WEBDRIVER.findElement(lblLoginErrorMsg);
+		return Constant.getWebDriver().findElement(lblLoginErrorMsg);
 	}
 	
 	//Methods

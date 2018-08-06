@@ -16,10 +16,8 @@ import com.logigear.selenium.pageobjects.railway.LoginPage;
  * TC08	- User can't change password when "New Password" and "Confirm Password" are different.
  */
 
-public class TC03_TestFunctionChangePassword extends Precondition{
+public class TC03_TestFunctionChangePassword extends Precondition_Invoked{
 	
-	String strMail = Constant.RAILWAY_ACC_MAIL;
-	String strPassword = Constant.RAILWAY_ACC_PASSWORD;
 	String strTC08NewPassword = "a123:\"/{}!@$\\";
 	String strTC08ConfirmPassword = "b456:\"/{}!@$\\";
 	String actualMsg;
@@ -27,7 +25,7 @@ public class TC03_TestFunctionChangePassword extends Precondition{
 
 	@Test
 	public void precondition() {
-		Precondition.preconditionCreateAndActiveAccount();
+		Precondition_Invoked.preconditionCreateAndActiveAccount();
 	}
 	
 	@Test(dependsOnMethods="precondition",priority=2)
@@ -40,14 +38,14 @@ public class TC03_TestFunctionChangePassword extends Precondition{
 
 		// 2. Login with valid account	
 		LoginPage loginpage = homepage.gotoLoginPage();
-		loginpage.login(strMail, strPassword);
+		loginpage.login(Constant.RAILWAY_ACC_MAIL, Constant.RAILWAY_ACC_PASSWORD);
 
 		// 3. Click on "Change Password" tab 
 		ChangePasswordPage changepasswordpage = homepage.gotoChangePasswordPage();
 		
 		// 4. Enter valid value into all fields
 		// 5. Click on "Change Password" button
-		changepasswordpage.changePassword(strPassword, strPassword+"updated", strPassword+"updated");
+		changepasswordpage.changePassword(Constant.RAILWAY_ACC_PASSWORD, Constant.RAILWAY_ACC_PASSWORD+"updated", Constant.RAILWAY_ACC_PASSWORD+"updated");
 		
 		// VP: Message "Your password has been updated" appears.
 		actualMsg = changepasswordpage.getSuccessMsg();
@@ -65,14 +63,14 @@ public class TC03_TestFunctionChangePassword extends Precondition{
 
 		// 2. Login with a valid account 
 		LoginPage loginpage = homepage.gotoLoginPage();
-		loginpage.login(strMail, strPassword);
+		loginpage.login(Constant.RAILWAY_ACC_MAIL, Constant.RAILWAY_ACC_PASSWORD);
 				
 		// 3. Click on "Change Password" tab
 		ChangePasswordPage changepasswordpage = loginpage.gotoChangePasswordPage();
 				
 		// 4. Enter valid information into "Current Password" textbox but enter "a123:"/{}!@$\" into "New Password" textbox and "b456:"/{}!@$\" into "Confirm Password" textbox.
 		// 5. Click on "Change Password" button
-		changepasswordpage.changePassword(strPassword, strTC08NewPassword, strTC08ConfirmPassword);		
+		changepasswordpage.changePassword(Constant.RAILWAY_ACC_PASSWORD, strTC08NewPassword, strTC08ConfirmPassword);		
 		
 		// VP: Error message "Password change failed. Please correct the errors and try again." appears.
 		actualMsg = changepasswordpage.getErrorMsg();

@@ -32,14 +32,15 @@ public class GMailLoginPage extends GeneralPage{
 //	}
 	
 	public GMailPage loginGMail(String strGMailPassword) {
-		this.getBtnNext().click();
-		Constant.WEBDRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		WebDriverWait webdriverwait = new WebDriverWait(Constant.WEBDRIVER, Constant.WEBDRIVER_IMPLICIT_WAIT);
 		
-		this.getTxtPassword().sendKeys(Constant.GMAIL_PASSWORD);
-		WebDriverWait webdriverwait = new WebDriverWait(Constant.WEBDRIVER, 10);
+		this.getBtnNext().click();
+		Constant.WEBDRIVER.manage().timeouts().implicitlyWait(Constant.WEBDRIVER_IMPLICIT_WAIT, TimeUnit.SECONDS);
+		
+		webdriverwait.until(ExpectedConditions.visibilityOf(getTxtPassword())).sendKeys(Constant.GMAIL_PASSWORD);;
 		webdriverwait.until(ExpectedConditions.elementToBeClickable(btnNext)).click();	
 		
-		Constant.WEBDRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Constant.WEBDRIVER.manage().timeouts().implicitlyWait(Constant.WEBDRIVER_IMPLICIT_WAIT, TimeUnit.SECONDS);
 		return new GMailPage();
 	}
 	

@@ -3,7 +3,6 @@ package com.logigear.selenium.test.railway;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.logigear.selenium.constant.Constant;
@@ -20,7 +19,7 @@ import com.logigear.selenium.pageobjects.railway.TimetablePage;
  * TC13	- User can open "Book ticket" page by click on "Book ticket" link in "Ticket price"
  */
 
-public class TC04_TestNavigationsToBookTicketPage extends Precondition{
+public class TC04_TestNavigationsToBookTicketPage extends Precondition_Invoked{
 	
 	String strMail = Constant.RAILWAY_ACC_MAIL;
 	String strPassword = Constant.RAILWAY_ACC_PASSWORD;
@@ -34,7 +33,7 @@ public class TC04_TestNavigationsToBookTicketPage extends Precondition{
 	
 	@Test
 	public void precondition() {
-		Precondition.preconditionCreateAndActiveAccount();
+		Precondition_Invoked.preconditionCreateAndActiveAccount();
 	}
 	
 	@Test(dependsOnMethods="precondition")
@@ -57,10 +56,8 @@ public class TC04_TestNavigationsToBookTicketPage extends Precondition{
 				
 		// VP: '"Book ticket" page is loaded with correct for  "Depart from" and "Arrive at" values.
 		String strPageTitle = Constant.WEBDRIVER.getTitle();
-		String strActualDepart = bookticketpage.getCmbDepartFrom()
-				.findElement(By.xpath(".//option[@selected='selected']")).getText();		
-		String strActualArrival = bookticketpage.getCmbArriveAt()
-				.findElement(By.xpath(".//option[@selected='selected']")).getText();
+		String strActualDepart = bookticketpage.getDepartFromSelectingValue();		
+		String strActualArrival = bookticketpage.getArriveAtSelectingValue();
 		
 		assertTrue(strPageTitle.contains("Book Ticket"), "Book Ticket is opened as expected");
 		assertEquals(strTC12DepartFrom, strActualDepart, "Depart's value is as expected");
@@ -91,12 +88,9 @@ public class TC04_TestNavigationsToBookTicketPage extends Precondition{
 		
 		// VP: '"Book ticket" page is loaded with correct for "Depart from", "Arrive at", and "Seat type".
 		String strPageTitle = Constant.WEBDRIVER.getTitle();
-		String strActualDepart = bookticketpage.getCmbDepartFrom()
-				.findElement(By.xpath(".//option[@selected='selected']")).getText();		
-		String strActualArrival = bookticketpage.getCmbArriveAt()
-				.findElement(By.xpath(".//option[@selected='selected']")).getText();
-		String strActualSeatType = bookticketpage.getCmbSeatType()
-				.findElement(By.xpath(".//option[@selected='selected']")).getText();
+		String strActualDepart = bookticketpage.getDepartFromSelectingValue();		
+		String strActualArrival = bookticketpage.getArriveAtSelectingValue();
+		String strActualSeatType = bookticketpage.getSeatTypeSelectingValue();
 		
 		assertTrue(strPageTitle.contains("Book Ticket"), "Book Ticket is not opened as expected");
 		assertEquals(strTC13DepartFrom, strActualDepart, "Depart's value is not as expected");

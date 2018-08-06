@@ -23,37 +23,37 @@ public class MyTicketPage extends GeneralPage{
 	
 	//Elements
 	protected WebElement getCmbDepartStation() {
-		return Constant.WEBDRIVER.findElement(cmbDepartStation);
+		return Constant.getWebDriver().findElement(cmbDepartStation);
 	}
 	
 	protected WebElement getCmbArriveStation() {
-		return Constant.WEBDRIVER.findElement(cmbArriveStation);
+		return Constant.getWebDriver().findElement(cmbArriveStation);
 	}
 	
 	protected WebElement getTxtDepartDate() {
-		return Constant.WEBDRIVER.findElement(txtDepartDate);
+		return Constant.getWebDriver().findElement(txtDepartDate);
 	}
 	
 	protected WebElement getCmbStatus() {
-		return Constant.WEBDRIVER.findElement(cmbStatus);
+		return Constant.getWebDriver().findElement(cmbStatus);
 	}
 	
 	protected WebElement getBtnApplyFilter() {
-		return Constant.WEBDRIVER.findElement(btnApplyFilter);
+		return Constant.getWebDriver().findElement(btnApplyFilter);
 	}
 	
 	protected WebElement getTlpTicketTable() {
-		return Constant.WEBDRIVER.findElement(tlpTicketTable);
+		return Constant.getWebDriver().findElement(tlpTicketTable);
 	}
 	
 	protected WebElement getDivFitlerErrorMsg() {
-		return Constant.WEBDRIVER.findElement(divFitlerErrorMsg);
+		return Constant.getWebDriver().findElement(divFitlerErrorMsg);
 	}
 	
 	//Methods
 	public MyTicketPage cancelFirstTicket() {
-		Constant.WEBDRIVER.findElement(By.xpath("(//input[@type='button' and @value='Cancel'])[1]")).click();
-		Constant.WEBDRIVER.switchTo().alert().accept();
+		Constant.getWebDriver().findElement(By.xpath("(//input[@type='button' and @value='Cancel'])[1]")).click();
+		Constant.getWebDriver().switchTo().alert().accept();
 		return this;
 	}
 	
@@ -65,7 +65,7 @@ public class MyTicketPage extends GeneralPage{
 		for(int i=0; i<strArrayInfo.length; i++) {
 			j = i+1;
 			currentCell = By.xpath("//table[@class='MyTable']//tr[2]/td["+ j +"]");
-			strArrayInfo[i] = Constant.WEBDRIVER
+			strArrayInfo[i] = Constant.getWebDriver()
 					.findElement(currentCell).getText();
 		}
 		return strArrayInfo;
@@ -84,7 +84,7 @@ public class MyTicketPage extends GeneralPage{
 			for(int j=0; j<cols.size()-2; j++) {
 				col = j+2;
 				currentCell = By.xpath("//table[@class='MyTable']//tr["+row+"]/td["+ col +"]");
-				strArrayTickets[i][j] = Constant.WEBDRIVER
+				strArrayTickets[i][j] = Constant.getWebDriver()
 						.findElement(currentCell).getText();
 			}
 		}

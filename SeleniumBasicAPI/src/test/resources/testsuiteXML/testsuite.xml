@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="com.logigear.selenium.driver.WebDriverListener"></listener>
+	</listeners>
+	<test name = "Tests on Chrome">	
+<!-- 		<parameter name="mode" value="mobile" /> -->
+<!-- 		<parameter name="browser" value="chrome" /> -->
+<!-- 		<parameter name="browser" value="chrome" /> -->
+		<parameter name="browserName" value="chrome"></parameter>
+		<classes>
+<!-- 			<class name="com.logigear.selenium.test.railway.tempTest" /> -->
+			<class name="com.logigear.selenium.test.railway.Sample_LoginTest" />
+<!-- 			<class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC05_TestFunctionsBookTicketAndManageticket_DataDriven" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC05_TestFunctionsBookTicketAndManageticket" /> -->
+		</classes>
+	</test>
+	
+	
+<!-- 	<test name = "Tests on Firefox"> -->
+<!--  		<parameter name="mode" value="mobile" /> -->
+<!-- 		<parameter name="browser" value="firefox" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC05_TestFunctionsBookTicketAndManageticket_DataDriven" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC05_TestFunctionsBookTicketAndManageticket" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite>

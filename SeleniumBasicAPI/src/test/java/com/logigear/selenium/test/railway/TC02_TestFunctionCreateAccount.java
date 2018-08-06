@@ -15,7 +15,7 @@ import com.logigear.selenium.pageobjects.railway.RegisterPage;
  * TC09	- User can't create account with "Confirm password" is not the same as "Password"
  */
 
-public class TC02_TestFunctionCreateAccount extends Precondition{
+public class TC02_TestFunctionCreateAccount extends Precondition_Invoked{
 	
 	String strMail = Utilities.generateRandomText("abcdefghijklmnopqrstuvwxyz1234567890", 7) + "@def.com";
 

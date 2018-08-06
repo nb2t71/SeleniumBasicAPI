@@ -18,14 +18,15 @@ import com.logigear.selenium.pageobjects.railway.LoginPage;
  * TC06	- User can't login with account hasn't been activated
  */
 
-public class TC01_TestFunctionLogin extends Precondition{
+public class TC01_TestFunctionLogin extends Precondition_Invoked{
 
 	String actualMsg;
 	String expectedMsg;
 	
 	@Test
 	public void precondition() {
-		Precondition.preconditionCreateAndActiveAccount();
+		Precondition_Invoked.preconditionCreateAndActiveAccount();
+		Precondition_Invoked.preconditionCreateInactiveAccount();
 	}
 	
 	@Test(dependsOnMethods="precondition")

@@ -19,15 +19,15 @@ import com.logigear.selenium.pageobjects.railway.LoginPage;
  * TC06	- User can't login with account hasn't been activated
  */
 
-public class TC01_TestFunctionLogin_DataProvider extends Precondition{
+public class TC01_TestFunctionLogin_DataProvider extends Precondition_Invoked{
 
-	String strMail = Constant.RAILWAY_ACC_MAIL;
 	String actualMsg;
 	String expectedMsg;
 	
 	@Test
 	public void precondition() {
 		Precondition.preconditionCreateAndActiveAccount();
+		Precondition.preconditionCreateInactiveAccount();
 	}
 	
 	@Test(dependsOnMethods="precondition")
@@ -45,11 +45,11 @@ public class TC01_TestFunctionLogin_DataProvider extends Precondition{
 		// FOR: TC01 - User can log into Railway with valid username and password
 		// 3. Enter valid Email and Password
 		// 4. Click on "Login" button User is logged into Railway
-		loginpage.login(strMail, Constant.RAILWAY_PASSWORD);
+		loginpage.login(Constant.RAILWAY_ACC_MAIL, Constant.RAILWAY_PASSWORD);
 		
 		// VP: Welcome user message is displayed
 		actualMsg = loginpage.getWelcomeMessage();
-		expectedMsg = "Welcome " + strMail;		
+		expectedMsg = "Welcome " + Constant.RAILWAY_ACC_MAIL;		
 		assertEquals(actualMsg, expectedMsg, "TC01 - Welcome message is not displayed as expected");
 	}
 	
@@ -145,9 +145,9 @@ public class TC01_TestFunctionLogin_DataProvider extends Precondition{
 	public Object[][] getDataFromDataprovider(){
 		return new Object[][] {
 			{"Involve TC06 - User can't login with account hasn't been activated", Constant.RAILWAY_ACC_MAIL_UNACTIVE, "123", 1, "Invalid username or password. Please try again.", "TC06 - Error message is not displayed as expected"},
-			{"Involve TC02 - User can't login with blank \"Username\" textbox", strMail, "", 1, "There was a problem with your login and/or errors exist in your form.", "TC02 - Error message is not displayed as expected"},
-			{"Involve TC03 - User cannot log into Railway with invalid password", strMail, "123", 1, "Invalid username or password. Please try again.", "TC03 - Error message is not displayed as expected"},
-			{"Involve TC04 - System shows message when user enter wrong password several times", strMail, 4, "123", "You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.", "TC04 - Error message is not displayed as expected"},
+			{"Involve TC02 - User can't login with blank \"Username\" textbox", Constant.RAILWAY_ACC_MAIL, "", 1, "There was a problem with your login and/or errors exist in your form.", "TC02 - Error message is not displayed as expected"},
+			{"Involve TC03 - User cannot log into Railway with invalid password", Constant.RAILWAY_ACC_MAIL, "123", 1, "Invalid username or password. Please try again.", "TC03 - Error message is not displayed as expected"},
+			{"Involve TC04 - System shows message when user enter wrong password several times", Constant.RAILWAY_ACC_MAIL, 4, "123", "You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.", "TC04 - Error message is not displayed as expected"},
 		};
 	}
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.logigear.selenium.driver.InvokedMethodListener"></listener>
+	</listeners>
+	<test name = "1st Test" parallel="methods" thread-count="2">	
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.logigear.selenium.test.railway.Sample_LoginTest">
+				<methods>
+                    <include name="TC01" />
+                    <include name="TC02" />
+                </methods>
+			</class>
+		</classes>
+	</test>
+	<test name = "2nd Test" parallel="methods" thread-count="2">	
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.logigear.selenium.test.railway.Sample_LoginTest">
+<!-- 				<methods> -->
+<!--                     <include name="TC01" /> -->
+<!--                     <include name="TC02" /> -->
+<!--                 </methods> -->
+			</class>
+		</classes>
+	</test>
+</suite>

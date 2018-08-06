@@ -17,7 +17,7 @@ import com.logigear.selenium.pageobjects.railway.LoginPage;
  * TC08	- User can't change password when "New Password" and "Confirm Password" are different.
  */
 
-public class TC03_TestFunctionChangePassword_DataProvider extends Precondition{
+public class TC03_TestFunctionChangePassword_DataProvider extends Precondition_Invoked{
 	
 	String strMail = Constant.RAILWAY_ACC_MAIL;
 	String strPassword = Constant.RAILWAY_ACC_PASSWORD;
@@ -28,7 +28,7 @@ public class TC03_TestFunctionChangePassword_DataProvider extends Precondition{
 
 	@Test
 	public void precondition() {
-		Precondition.preconditionCreateAndActiveAccount();
+		Precondition_Invoked.preconditionCreateAndActiveAccount();
 	}
 	
 	@Test(dependsOnMethods="precondition", dataProvider="data")
@@ -65,8 +65,8 @@ public class TC03_TestFunctionChangePassword_DataProvider extends Precondition{
 	@DataProvider(name="data")
 	public Object[][] getDataFromDataprovider(){
 		return new Object[][] {
-			{"Involve TC08 - User can change password", strMail, strPassword, strTC08NewPassword, strTC08ConfirmPassword, "Password change failed. Please correct the errors and try again."},
-			{"Involve TC07 - User can change password", strMail, strPassword, strPassword+"updated", strPassword+"updated", "Your password has been updated!"}
+			{"Involve TC08 - User can change password", Constant.RAILWAY_ACC_MAIL, Constant.RAILWAY_ACC_PASSWORD, strTC08NewPassword, strTC08ConfirmPassword, "Password change failed. Please correct the errors and try again."},
+			{"Involve TC07 - User can change password", Constant.RAILWAY_ACC_MAIL, Constant.RAILWAY_ACC_PASSWORD, strPassword+"updated", strPassword+"updated", "Your password has been updated!"}
 		};
 	}
 }

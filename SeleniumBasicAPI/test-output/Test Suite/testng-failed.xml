@@ -1,54 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="7" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
-  <test thread-count="7" name="All tests(failed)">
-    <parameter name="mode" value="mobile"/>
-    <parameter name="browser" value="android.chrome"/>
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.logigear.selenium.driver.InvokedMethodListener"/>
+  </listeners>
+  <test thread-count="2" name="1st Test(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Railway.TC03_TestFunctionChangePassword">
+      <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword">
         <methods>
           <include name="precondition"/>
-          <include name="afterMetohod"/>
+          <include name="TC07_TC08"/>
           <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Railway.TC03_TestFunctionChangePassword -->
-      <class name="Railway.TC05_TestFunctionsBookTicketAndManageticket_DataDriven">
-        <methods>
-          <include name="precondition"/>
+          <include name="TC08"/>
           <include name="afterMetohod"/>
-          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- Railway.TC05_TestFunctionsBookTicketAndManageticket_DataDriven -->
-      <class name="Railway.TC05_TestFunctionsBookTicketAndManageticket">
+      </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword -->
+      <class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin">
         <methods>
-          <include name="precondition"/>
-          <include name="afterMetohod"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Railway.TC05_TestFunctionsBookTicketAndManageticket -->
-      <class name="Railway.TC04_TestNavigationsToBookTicketPage">
-        <methods>
-          <include name="afterMetohod"/>
-          <include name="precondition"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Railway.TC04_TestNavigationsToBookTicketPage -->
-      <class name="Railway.TC01_TestFunctionLogin">
-        <methods>
-          <include name="afterMetohod"/>
-          <include name="precondition"/>
           <include name="TC01_TC02_TC03_TC04_TC06"/>
           <include name="beforeMethod"/>
+          <include name="precondition"/>
+          <include name="afterMetohod"/>
         </methods>
-      </class> <!-- Railway.TC01_TestFunctionLogin -->
-      <class name="Railway.TC03_TestFunctionChangePassword_DataProvider">
+      </class> <!-- com.logigear.selenium.test.railway.TC01_TestFunctionLogin -->
+      <class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage">
         <methods>
+          <include name="beforeMethod"/>
+          <include name="precondition"/>
+          <include name="afterMetohod"/>
+          <include name="TC12"/>
+          <include name="TC13"/>
+        </methods>
+      </class> <!-- com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage -->
+      <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider">
+        <methods>
+          <include name="beforeMethod"/>
           <include name="afterMetohod"/>
           <include name="TC07_TC08"/>
           <include name="precondition"/>
-          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- Railway.TC03_TestFunctionChangePassword_DataProvider -->
+      </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider -->
     </classes>
-  </test> <!-- All tests(failed) -->
+  </test> <!-- 1st Test(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->
