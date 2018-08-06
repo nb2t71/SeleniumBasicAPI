@@ -68,7 +68,7 @@ public class TC05_TestFunctionsBookTicketAndManageticket_DataProvider  extends P
 	}
 	
 	
-	@Test(dependsOnMethods="TC10andTC11", dataProvider="DataForManageTicket", priority=1)
+	@Test(dependsOnMethods="TC10andTC11", dataProvider="DataForManageTicket")
 	public void TC15_TC16(String strTMname, String strFilteredByDepartStation
 			, String strFilteredByArriveStation, String strFilteredByDepartDate, String strFilteredByByStatus) {
 		System.out.println("TC16 - User can filter \"Manager ticket\" table with Depart Date");

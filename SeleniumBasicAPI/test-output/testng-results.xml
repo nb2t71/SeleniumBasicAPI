@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="6" failed="4" ignored="0" total="13" passed="3">
+<testng-results skipped="3" failed="5" ignored="0" total="13" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="57276" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:12Z">
+  <suite name="Test Suite" duration-ms="56105" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:14:09Z">
     <groups>
     </groups>
-    <test name="1st Test" duration-ms="57276" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:12Z">
+    <test name="1st Test" duration-ms="56105" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:14:09Z">
       <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="precondition" duration-ms="51932" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:06Z">
+        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="precondition" duration-ms="9081" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]]]>
@@ -30,7 +30,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
-at com.logigear.selenium.test.railway.Precondition.preconditionCreateAndActiveAccount(Precondition.java:101)
+at com.logigear.selenium.test.railway.Precondition_Invoked.preconditionCreateAndActiveAccount(Precondition_Invoked.java:102)
 at com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition(TC03_TestFunctionChangePassword_DataProvider.java:31)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -51,11 +51,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-02T11:41:10Z" finished-at="2018-08-02T11:41:10Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:36Z" finished-at="2018-08-06T03:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-        <test-method status="SKIP" signature="TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="TC07_TC08" duration-ms="0" started-at="2018-08-02T11:41:10Z" data-provider="data" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition" finished-at="2018-08-02T11:41:10Z">
+        <test-method status="SKIP" signature="TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5]" name="TC07_TC08" duration-ms="0" started-at="2018-08-06T03:13:36Z" data-provider="data" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition" finished-at="2018-08-06T03:13:36Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@6fd02e5] depends on not successfully finished methods]]>
@@ -76,7 +76,7 @@ at java.lang.Thread.run(Thread.java:748)
         </test-method> <!-- TC07_TC08 -->
       </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider -->
       <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:26Z">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="precondition" duration-ms="51938" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:06Z">
+        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="precondition" duration-ms="8931" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]]]>
@@ -99,7 +99,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
-at com.logigear.selenium.test.railway.Precondition.preconditionCreateAndActiveAccount(Precondition.java:101)
+at com.logigear.selenium.test.railway.Precondition_Invoked.preconditionCreateAndActiveAccount(Precondition_Invoked.java:102)
 at com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition(TC03_TestFunctionChangePassword.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -120,11 +120,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-02T11:41:11Z" finished-at="2018-08-02T11:41:11Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:36Z" finished-at="2018-08-06T03:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-        <test-method status="SKIP" signature="TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="TC08" duration-ms="0" started-at="2018-08-02T11:41:12Z" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition" finished-at="2018-08-02T11:41:12Z">
+        <test-method status="SKIP" signature="TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="TC08" duration-ms="0" started-at="2018-08-06T03:14:09Z" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition" finished-at="2018-08-06T03:14:09Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method TC03_TestFunctionChangePassword.TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292] depends on not successfully finished methods]]>
@@ -143,7 +143,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC08 -->
-        <test-method status="SKIP" signature="TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="TC07_TC08" duration-ms="0" started-at="2018-08-02T11:41:12Z" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition" finished-at="2018-08-02T11:41:12Z">
+        <test-method status="SKIP" signature="TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292]" name="TC07_TC08" duration-ms="0" started-at="2018-08-06T03:14:09Z" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition" finished-at="2018-08-06T03:14:09Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method TC03_TestFunctionChangePassword.TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@e45f292] depends on not successfully finished methods]]>
@@ -164,7 +164,7 @@ at java.lang.Thread.run(Thread.java:748)
         </test-method> <!-- TC07_TC08 -->
       </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword -->
       <class name="com.logigear.selenium.test.railway.Sample_LoginTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:13Z">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:13Z">
           <params>
             <param index="0">
               <value>
@@ -186,25 +186,25 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC01()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="TC01" duration-ms="50464" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:05Z">
+        <test-method status="PASS" signature="TC01()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="TC01" duration-ms="12707" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01 -->
-        <test-method status="PASS" signature="TC02()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="TC02" duration-ms="50463" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:05Z">
+        <test-method status="PASS" signature="TC02()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="TC02" duration-ms="11992" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02 -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-02T11:41:09Z" finished-at="2018-08-02T11:41:09Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="afterMetohod" is-config="true" duration-ms="4" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-02T11:41:11Z" finished-at="2018-08-02T11:41:11Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@2f686d1f]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
       </class> <!-- com.logigear.selenium.test.railway.Sample_LoginTest -->
       <class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:13Z">
           <params>
             <param index="0">
               <value>
@@ -215,20 +215,38 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="precondition" duration-ms="51958" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:06Z">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="precondition" duration-ms="43579" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-06T03:13:57Z" finished-at="2018-08-06T03:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMetohod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:57Z" finished-at="2018-08-06T03:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="TC01_TC02_TC03_TC04_TC06" duration-ms="11240" started-at="2018-08-06T03:13:57Z" depends-on-methods="com.logigear.selenium.test.railway.TC01_TestFunctionLogin.precondition" finished-at="2018-08-06T03:14:08Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]]]>
+              <![CDATA[TC04 - Error message is not displayed as expected expected [You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.] but found [Invalid username or password. Please try again.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]
+              <![CDATA[java.lang.AssertionError: TC04 - Error message is not displayed as expected expected [You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.] but found [Invalid username or password. Please try again.]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
-at com.logigear.selenium.test.railway.Precondition_Invoked.preconditionCreateAndActiveAccount(Precondition_Invoked.java:102)
-at com.logigear.selenium.test.railway.TC01_TestFunctionLogin.precondition(TC01_TestFunctionLogin.java:28)
+at com.logigear.selenium.test.railway.TC01_TestFunctionLogin.TC01_TC02_TC03_TC04_TC06(TC01_TestFunctionLogin.java:99)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -247,33 +265,14 @@ at java.lang.Thread.run(Thread.java:748)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-02T11:41:11Z" finished-at="2018-08-02T11:41:11Z">
+        </test-method> <!-- TC01_TC02_TC03_TC04_TC06 -->
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-06T03:14:09Z" finished-at="2018-08-06T03:14:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-        <test-method status="SKIP" signature="TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989]" name="TC01_TC02_TC03_TC04_TC06" duration-ms="0" started-at="2018-08-02T11:41:11Z" depends-on-methods="com.logigear.selenium.test.railway.TC01_TestFunctionLogin.precondition" finished-at="2018-08-02T11:41:11Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC01_TestFunctionLogin.TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC01_TestFunctionLogin.TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@3fee9989] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_TC02_TC03_TC04_TC06 -->
       </class> <!-- com.logigear.selenium.test.railway.TC01_TestFunctionLogin -->
       <class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:26Z">
           <params>
             <param index="0">
               <value>
@@ -284,12 +283,95 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="precondition" duration-ms="56507" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:11Z">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="precondition" duration-ms="32779" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-06T03:14:00Z" finished-at="2018-08-06T03:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMetohod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-06T03:14:00Z" finished-at="2018-08-06T03:14:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC12()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="TC12" duration-ms="6339" started-at="2018-08-06T03:14:00Z" depends-on-methods="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition" finished-at="2018-08-06T03:14:06Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LGVN14736', ip: '192.168.170.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 131ea63fd65159f2401aa3a8e75da993
+*** Element info: {Using=xpath, value=//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LGVN14736', ip: '192.168.170.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 131ea63fd65159f2401aa3a8e75da993
+*** Element info: {Using=xpath, value=//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at com.logigear.selenium.pageobjects.railway.GeneralPage.getTabTimetable(GeneralPage.java:57)
+at com.logigear.selenium.pageobjects.railway.GeneralPage.gotoTimetablePage(GeneralPage.java:99)
+at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.TC12(TC04_TestNavigationsToBookTicketPage.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12 -->
+        <test-method status="FAIL" signature="TC13()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="TC13" duration-ms="6905" started-at="2018-08-06T03:14:00Z" depends-on-methods="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition" finished-at="2018-08-06T03:14:07Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.logigear.selenium.test.railway.Precondition.preconditionCreateAndActiveAccount(Precondition.java:105)
-at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition(TC04_TestNavigationsToBookTicketPage.java:36)
+at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.TC13(TC04_TestNavigationsToBookTicketPage.java:90)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -308,52 +390,8 @@ at java.lang.Thread.run(Thread.java:748)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-02T11:41:12Z" finished-at="2018-08-02T11:41:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMetohod -->
-        <test-method status="SKIP" signature="TC13()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="TC13" duration-ms="0" started-at="2018-08-02T11:41:12Z" depends-on-methods="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition" finished-at="2018-08-02T11:41:12Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC04_TestNavigationsToBookTicketPage.TC13()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC04_TestNavigationsToBookTicketPage.TC13()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- TC13 -->
-        <test-method status="SKIP" signature="TC12()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="TC12" duration-ms="0" started-at="2018-08-02T11:41:12Z" depends-on-methods="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition" finished-at="2018-08-02T11:41:12Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC04_TestNavigationsToBookTicketPage.TC12()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC04_TestNavigationsToBookTicketPage.TC12()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC12 -->
-      </class> <!-- com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage -->
-      <class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5700d6b1]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:40:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-06T03:14:00Z" finished-at="2018-08-06T03:14:00Z">
           <params>
             <param index="0">
               <value>
@@ -364,11 +402,32 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC09()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5700d6b1]" name="TC09" duration-ms="52431" started-at="2018-08-02T11:40:14Z" finished-at="2018-08-02T11:41:07Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-06T03:14:07Z" finished-at="2018-08-06T03:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMetohod -->
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@5f2108b5]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-06T03:14:07Z" finished-at="2018-08-06T03:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMetohod -->
+      </class> <!-- com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage -->
+      <class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5700d6b1]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC09()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5700d6b1]" name="TC09" duration-ms="12918" started-at="2018-08-06T03:13:13Z" finished-at="2018-08-06T03:13:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC09 -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5700d6b1]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-02T11:41:11Z" finished-at="2018-08-02T11:41:11Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5700d6b1]" name="afterMetohod" is-config="true" duration-ms="1" started-at="2018-08-06T03:13:26Z" finished-at="2018-08-06T03:13:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->

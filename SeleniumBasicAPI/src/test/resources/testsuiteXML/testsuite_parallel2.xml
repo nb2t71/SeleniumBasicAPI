@@ -15,7 +15,7 @@
 <!-- 			</class> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
-	<test name = "1st Test" parallel="methods" thread-count="10">	
+	<test name = "1st Test" parallel="methods" thread-count="4">	
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.logigear.selenium.test.railway.Sample_LoginTest"/>
