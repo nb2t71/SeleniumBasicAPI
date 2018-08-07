@@ -11,8 +11,8 @@ import com.logigear.selenium.driver.TLDriverFactory;
 import com.logigear.selenium.pageobjects.railway.HomePage;
 import com.logigear.selenium.pageobjects.railway.LoginPage;
 
-public class Sample_LoginTest extends Precondition_Invoked{	
-	
+public class Sample_LoginTest extends Precondition_Invoked {
+
 	String strMail = Utilities.generateRandomText("abcdefghijklmnopqrstuvwxyz", 6) + "@abc.com";
 	String strPassword = "12345678";
 	String strConfirmPassword = "12345678";
@@ -23,27 +23,25 @@ public class Sample_LoginTest extends Precondition_Invoked{
 	String strTC09ConfirmPassword = "10000000";
 
 //	WebDriver driver;
-	 
+
 //    private WebDriver getDriver () {
 //        return driver = TLDriverFactory.getDriver();
 //    }
-	
-	/*@BeforeMethod
-	public void beforeMethod() {
-		System.out.println("Run beforeMethod");
-		
-		System.setProperty("webdriver.chrome.driver", Utilities.getProjectPath() + "\\Executables\\chromedriver.exe");
-		Constant.WEBDRIVER = new ChromeDriver();
-		Constant.WEBDRIVER.manage().window().maximize();
-	}
-	
-	@AfterMethod
-	public void afterMetohod() {
-		System.out.println("Run afterMethod");
-		
-		Constant.WEBDRIVER.quit();
-	}*/
-	
+
+	/*
+	 * @BeforeMethod public void beforeMethod() {
+	 * System.out.println("Run beforeMethod");
+	 * 
+	 * System.setProperty("webdriver.chrome.driver", Utilities.getProjectPath() +
+	 * "\\Executables\\chromedriver.exe"); Constant.WEBDRIVER = new ChromeDriver();
+	 * Constant.WEBDRIVER.manage().window().maximize(); }
+	 * 
+	 * @AfterMethod public void afterMetohod() {
+	 * System.out.println("Run afterMethod");
+	 * 
+	 * Constant.WEBDRIVER.quit(); }
+	 */
+
 	@Test
 	public void TC01() {
 		System.out.println("TC01 - User can log into Railway with valid username and password");
@@ -52,20 +50,20 @@ public class Sample_LoginTest extends Precondition_Invoked{
 		HomePage homepage = new HomePage();
 		homepage.open();
 
-		// 2. Click on "Login" tab	
+		// 2. Click on "Login" tab
 		LoginPage loginpage = homepage.gotoLoginPage();
-				
+
 		// 3. Enter valid Email and Password
 		// 4. Click on "Login" button User is logged into Railway
 		loginpage.login(Constant.RAILWAY_USERNAME, Constant.RAILWAY_PASSWORD);
-		
+
 		// VP: Welcome user message is displayed
 		String actualMsg = loginpage.getWelcomeMessage();
 		String expectedMsg = "Welcome " + Constant.RAILWAY_USERNAME;
-		
+
 		assertEquals(actualMsg, expectedMsg, "Welcome message is not displayed as expected");
 	}
-	
+
 	@Test
 	public void TC02() {
 		System.out.println("TC02 - User can log into Railway with valid username and password");
@@ -74,18 +72,18 @@ public class Sample_LoginTest extends Precondition_Invoked{
 		HomePage homepage = new HomePage();
 		homepage.open();
 
-		// 2. Click on "Login" tab	
+		// 2. Click on "Login" tab
 		LoginPage loginpage = homepage.gotoLoginPage();
-				
+
 		// 3. Enter valid Email and Password
 		// 4. Click on "Login" button User is logged into Railway
 		loginpage.login(Constant.RAILWAY_USERNAME, Constant.RAILWAY_PASSWORD);
-		
+
 		// VP: Welcome user message is displayed
 		String actualMsg = loginpage.getWelcomeMessage();
 		String expectedMsg = "Welcome " + Constant.RAILWAY_USERNAME;
-		
+
 		assertEquals(actualMsg, expectedMsg, "Welcome message is not displayed as expected");
 	}
-	
+
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.logigear.selenium.driver.InvokedMethodListener"/>
+  </listeners>
+  <test thread-count="2" name="1st Test(failed)" parallel="methods">
+    <parameter name="runmode" value="remote"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="huburl" value="http://localhost:4444/wd/hub"/>
+    <classes>
+      <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMetohod"/>
+          <include name="TC07_TC08"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider -->
+      <class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="precondition"/>
+          <include name="afterMetohod"/>
+          <include name="TC12"/>
+          <include name="TC13"/>
+        </methods>
+      </class> <!-- com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage -->
+    </classes>
+  </test> <!-- 1st Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

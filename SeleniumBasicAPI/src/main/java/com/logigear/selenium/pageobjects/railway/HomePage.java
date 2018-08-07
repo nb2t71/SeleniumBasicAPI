@@ -14,11 +14,11 @@ public class HomePage extends GeneralPage {
 //		super();
 //		this.driverHomePage = driver;
 //	}
-	//Locators
-	
-	//Elements
-	
-	//Methods
+	// Locators
+
+	// Elements
+
+	// Methods
 	public HomePage open() {
 		Constant.getWebDriver().navigate().to(Constant.RAILWAY_URL);
 		return this;

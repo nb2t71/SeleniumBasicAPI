@@ -7,7 +7,7 @@ import com.logigear.selenium.constant.Constant;
 
 public class RegisterPage extends GeneralPage {
 
-	//Locators
+	// Locators
 	private final By txtEmail = By.xpath("//input[@id='email']");
 	private final By txtPassword = By.xpath("//input[@id='password']");
 	private final By txtConfirmPassword = By.xpath("//input[@id='confirmPassword']");
@@ -16,30 +16,36 @@ public class RegisterPage extends GeneralPage {
 	private final By lblThankYou = By.xpath("//div[@id='content']/h1[@align='center']");
 	private final By lblRegisterErrorMsg = By.xpath("//p[@class='message error']");
 
-	//Elements
+	// Elements
 	protected WebElement getTxtEmail() {
 		return Constant.getWebDriver().findElement(txtEmail);
 	}
+
 	protected WebElement getTxtPassword() {
 		return Constant.getWebDriver().findElement(txtPassword);
 	}
+
 	protected WebElement getTxtConfirmPassword() {
 		return Constant.getWebDriver().findElement(txtConfirmPassword);
 	}
+
 	protected WebElement getTxtPID() {
 		return Constant.getWebDriver().findElement(txtPID);
 	}
+
 	protected WebElement getBtnRegist() {
 		return Constant.getWebDriver().findElement(btnRegist);
 	}
+
 	protected WebElement getLblThankYou() {
 		return Constant.getWebDriver().findElement(lblThankYou);
 	}
+
 	protected WebElement getLblRegisterErrorMsg() {
 		return Constant.getWebDriver().findElement(lblRegisterErrorMsg);
 	}
-	
-	//Methods
+
+	// Methods
 //	public void registNewAccount(String strMail, String strPassword, String strConfirmPassword, String strPID) {
 //		this.getTxtEmail().sendKeys(strMail);
 //		this.getTxtPassword().sendKeys(strPassword);
@@ -47,7 +53,7 @@ public class RegisterPage extends GeneralPage {
 //		this.getTxtPID().sendKeys(strPID);
 //		this.getBtnRegist().click();
 //	}
-	
+
 	public RegisterPage registNewAccount(String strMail, String strPassword, String strConfirmPassword, String strPID) {
 		this.getTxtEmail().sendKeys(strMail);
 		this.getTxtPassword().sendKeys(strPassword);
@@ -56,7 +62,7 @@ public class RegisterPage extends GeneralPage {
 		this.getBtnRegist().click();
 		return this;
 	}
-	
+
 	public String getRegisterThankYouMsg() {
 		return this.getLblThankYou().getText();
 	}
