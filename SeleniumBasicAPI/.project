@@ -3,7 +3,7 @@
 	<name>SeleniumBasicAPI</name>
 	<comment></comment>
 	<projects>
-		<project>GoogleMapAPI_SeleniumJava</project>
+		<project>Selenium_Seminar</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

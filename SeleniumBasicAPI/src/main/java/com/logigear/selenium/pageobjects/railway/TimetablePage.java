@@ -7,17 +7,19 @@ import com.logigear.selenium.pageobjects.railway.BookTicketPage;
 
 public class TimetablePage extends GeneralPage {
 
-	//Locators
-	
-	//Elements
+	// Locators
 
-	//Methods
-	
+	// Elements
+
+	// Methods
+
 	public BookTicketPage openBookTicketFromDepartAndArrival(String strDepartStation, String strArriveStation) {
-		//td[text()='Sài Gòn']/following-sibling::td[text()='Phan Thiết']/parent::tr//a[text()='book ticket']
-		By strXPath = By.xpath("//td[text()='"+strDepartStation+"']/following-sibling::td[text()='"+strArriveStation+"']/parent::tr//a[text()='book ticket']");
-		Constant.WEBDRIVER.findElement(strXPath).click();
+		// td[text()='Sài Gòn']/following-sibling::td[text()='Phan
+		// Thiết']/parent::tr//a[text()='book ticket']
+		By strXPath = By.xpath("//td[text()='" + strDepartStation + "']/following-sibling::td[text()='"
+				+ strArriveStation + "']/parent::tr//a[text()='book ticket']");
+		Constant.getWebDriver().findElement(strXPath).click();
 		return new BookTicketPage();
 	}
-	
+
 }

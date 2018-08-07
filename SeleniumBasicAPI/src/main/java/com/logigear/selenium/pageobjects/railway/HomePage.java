@@ -1,16 +1,26 @@
 package com.logigear.selenium.pageobjects.railway;
 
+import org.openqa.selenium.WebDriver;
+
 import com.logigear.selenium.constant.Constant;
 
 public class HomePage extends GeneralPage {
+//	private WebDriver driverHomePage = Constant.getWebDriver();
+//	public HomePage() {
+//		
+//	}
+//	
+//	public HomePage(WebDriver driver) {
+//		super();
+//		this.driverHomePage = driver;
+//	}
+	// Locators
 
-	//Locators
-	
-	//Elements
-	
-	//Methods
+	// Elements
+
+	// Methods
 	public HomePage open() {
-		Constant.WEBDRIVER.navigate().to(Constant.RAILWAY_URL);
+		Constant.getWebDriver().navigate().to(Constant.RAILWAY_URL);
 		return this;
 	}
 }

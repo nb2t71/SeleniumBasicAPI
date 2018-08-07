@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.logigear.selenium.driver.InvokedMethodListener"></listener>
+	</listeners>
+	<test name = "1st Test" parallel="methods" thread-count="4">	
+		<parameter name="browser" value="chrome"></parameter>
+<!-- 		<parameter name="runmode" value="local"></parameter> -->
+		<parameter name="runmode" value="remote"></parameter>
+		<parameter name="huburl" value="http://localhost:4444/wd/hub"></parameter>
+		<classes>
+<!-- 			<class name="com.logigear.selenium.test.railway.Sample_LoginTest"/> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount" /> -->
+			<class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider" />
+<!-- 			<class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword" /> -->
+			<class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage" />
+<!-- 			<class name="com.logigear.selenium.test.railway.TC05_TestFunctionsBookTicketAndManageticket_DataDriven" /> -->
+<!-- 			<class name="com.logigear.selenium.test.railway.TC05_TestFunctionsBookTicketAndManageticket" /> -->
+		</classes>
+	</test>
+</suite>
