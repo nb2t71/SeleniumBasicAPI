@@ -2,14 +2,13 @@ package com.logigear.selenium.test.railway;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import com.logigear.selenium.common.Utilities;
 import com.logigear.selenium.constant.Constant;
-import com.logigear.selenium.driver.TLDriverFactory;
 import com.logigear.selenium.pageobjects.railway.HomePage;
 import com.logigear.selenium.pageobjects.railway.LoginPage;
+import com.swtestacademy.selenium.utilities.extentreports.ExtentTestManager;
 
 public class Sample_LoginTest extends Precondition_Invoked {
 
@@ -42,9 +41,12 @@ public class Sample_LoginTest extends Precondition_Invoked {
 	 * Constant.WEBDRIVER.quit(); }
 	 */
 
-	@Test
+	@Test(description = "TC01 - User can log into Railway with valid username and password")
 	public void TC01() {
 		System.out.println("TC01 - User can log into Railway with valid username and password");
+		// ExtentReports Description
+		ExtentTestManager.getTest().info("TC01 - User can log into Railway with valid username and password");
+
 //		Constant.getWebDriver();
 		// 1. Navigate to QA Railway Website
 		HomePage homepage = new HomePage();

@@ -1,4 +1,4 @@
-package com.logigear.selenium.driver;
+package com.swtestacademy.selenium.driver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,36 +15,43 @@ public class TLDriverFactory {
 
 	private static OptionsManager optionsManager = new OptionsManager();
 	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+	private static String pathDriver = Constant.PATH_SRC + "\\test\\resources\\drivers\\";
 
 	public static synchronized void setDriver(String browser, String runMode, String hubURL) {
-		if(runMode==null) 
+		if (runMode == null)
 			runMode = "local";
 		switch (runMode) {
 		case "local":
 			// For Local Usage
 			if (browser.equals("firefox")) {
-				System.setProperty("webdriver.gecko.driver", Constant.PATH_DRIVERS + "\\" + "geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", pathDriver + "geckodriver.exe");
 				tlDriver = ThreadLocal.withInitial(() -> new FirefoxDriver(optionsManager.getFirefoxOptions()));
 			} else if (browser.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", Constant.PATH_DRIVERS + "\\" + "chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", pathDriver + "chromedriver.exe");
 				tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			}
 			break;
 		case "remote":
 			// For Grid Usage
-			if (browser.equals("firefox")) {	
-				  try { tlDriver.set(new RemoteWebDriver(new URL(hubURL), optionsManager.getFirefoxOptions())); }
-				  catch (MalformedURLException e) { e.printStackTrace(); }
-			} else if (browser.equals("chrome")) {				
-				  try { tlDriver.set(new RemoteWebDriver(new URL(hubURL), optionsManager.getChromeOptions())); }
-				  catch (MalformedURLException e) { e.printStackTrace(); }			 
+			if (browser.equals("firefox")) {
+				try {
+					tlDriver.set(new RemoteWebDriver(new URL(hubURL), optionsManager.getFirefoxOptions()));
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
+			} else if (browser.equals("chrome")) {
+				try {
+					tlDriver.set(new RemoteWebDriver(new URL(hubURL), optionsManager.getChromeOptions()));
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
 			}
 			break;
 
 		default:
 			break;
 		}
-		
+
 	}
 
 	public static synchronized WebDriverWait getWait(WebDriver driver) {

@@ -1,10 +1,10 @@
 package com.logigear.selenium.test.railway;
 
-import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.logigear.selenium.constant.Constant;
 import com.logigear.selenium.pageobjects.railway.BookTicketPage;

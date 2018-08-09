@@ -1,7 +1,5 @@
 package com.logigear.selenium.pageobjects.railway;
 
-import org.openqa.selenium.WebDriver;
-
 import com.logigear.selenium.constant.Constant;
 
 public class HomePage extends GeneralPage {

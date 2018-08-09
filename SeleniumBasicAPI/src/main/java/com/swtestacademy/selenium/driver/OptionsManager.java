@@ -1,4 +1,4 @@
-package com.logigear.selenium.driver;
+package com.swtestacademy.selenium.driver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;

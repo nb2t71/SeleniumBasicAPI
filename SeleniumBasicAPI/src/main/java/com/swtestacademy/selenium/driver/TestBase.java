@@ -1,4 +1,4 @@
-package com.logigear.selenium.driver;
+package com.swtestacademy.selenium.driver;
 
 import java.net.MalformedURLException;
 

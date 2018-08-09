@@ -47,8 +47,8 @@ public class gmailApi {
 
 				// Load client secrets
 				GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(jsonFactory,
-						new InputStreamReader(new FileInputStream(
-								new File(Constant.PATH_FILE_CLIENT_SECRET + "\\" + "client_secret.json"))));
+						new InputStreamReader(new FileInputStream(new File(Constant.PATH_SRC
+								+ "\\main\\java\\com\\logigear\\selenium\\utilities\\gmail\\client_secret.json"))));
 //				new File("src/main/java/com/logigear/selenium/utilities/gmail/client_secret.json"))));
 
 				// Set up authorization code flow

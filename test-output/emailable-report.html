@@ -9,79 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Test Suite</th></tr>
-<tr><td><a href="#t0">1st Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">3</td><td class="num">37,873</td><td></td><td></td></tr>
+<tr><td><a href="#t0">1st Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">55,012</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">1st Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider</td><td><a href="#m0">precondition</a></td><td rowspan="1">1533617122259</td><td rowspan="1">11095</td></tr><tr class="failedodd"><td rowspan="2">com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage</td><td><a href="#m1">TC12</a></td><td rowspan="1">1533617151747</td><td rowspan="1">8206</td></tr><tr class="failedodd"><td><a href="#m2">TC13</a></td><td rowspan="1">1533617151730</td><td rowspan="1">6990</td></tr><tr><th colspan="4">1st Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider</td><td><a href="#m3">TC07_TC08</a></td><td rowspan="1">1533617133465</td><td rowspan="1">0</td></tr><tr><th colspan="4">1st Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage</td><td><a href="#m4">precondition</a></td><td rowspan="1">1533617122259</td><td rowspan="1">29380</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">1st Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.logigear.selenium.test.railway.Sample_LoginTest</td><td><a href="#m0">TC01</a></td><td rowspan="1">1533797487376</td><td rowspan="1">25257</td></tr><tr class="failedodd"><td rowspan="1">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</td><td><a href="#m1">TC01_TC02_TC03_TC04_TC06</a></td><td rowspan="1">1533797535393</td><td rowspan="1">6967</td></tr><tr><th colspan="4">1st Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.logigear.selenium.test.railway.Sample_LoginTest</td><td><a href="#m2">TC02</a></td><td rowspan="1">1533797487401</td><td rowspan="1">30840</td></tr><tr class="passedodd"><td rowspan="1">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</td><td><a href="#m3">precondition</a></td><td rowspan="1">1533797487401</td><td rowspan="1">47374</td></tr><tr class="passedeven"><td rowspan="1">com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount</td><td><a href="#m4">TC09</a></td><td rowspan="1">1533797487400</td><td rowspan="1">29471</td></tr></tbody>
 </table>
-<h2>1st Test</h2><h3 id="m0">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider#precondition</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]
-	at com.logigear.selenium.test.railway.Precondition_Invoked.preconditionCreateAndActiveAccount(Precondition_Invoked.java:107)
-	at com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition(TC03_TestFunctionChangePassword_DataProvider.java:30)
+<h2>1st Test</h2><h3 id="m0">com.logigear.selenium.test.railway.Sample_LoginTest#TC01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: com.logigear.selenium.test.railway.Sample_LoginTest cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage#TC12</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;menu&apos;]//a[@href=&apos;TrainTimeListPage.cshtml&apos;]&quot;}
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LGVN14736&apos;, ip: &apos;192.168.170.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true, webdriver.remote.sessionid: e14f7d1e08255c5e5b7641970f3...}
-Session ID: e14f7d1e08255c5e5b7641970f33ab6f
-*** Element info: {Using=xpath, value=//div[@id=&apos;menu&apos;]//a[@href=&apos;TrainTimeListPage.cshtml&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.logigear.selenium.pageobjects.railway.GeneralPage.getTabTimetable(GeneralPage.java:57)
-	at com.logigear.selenium.pageobjects.railway.GeneralPage.gotoTimetablePage(GeneralPage.java:99)
-	at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.TC12(TC04_TestNavigationsToBookTicketPage.java:53)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.logigear.selenium.test.railway.TC01_TestFunctionLogin#TC01_TC02_TC03_TC04_TC06</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage#TC13</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[text()=&apos;Nha Trang to Phan Thiáº¿t&apos;]/../..&quot;}
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LGVN14736&apos;, ip: &apos;192.168.170.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true, webdriver.remote.sessionid: bdd3fdf100105c2d62a616d5221...}
-Session ID: bdd3fdf100105c2d62a616d5221e2516
-*** Element info: {Using=xpath, value=//li[text()=&apos;Nha Trang to Phan Thiáº¿t&apos;]/../..}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.logigear.selenium.pageobjects.railway.TicketPricePage.openTicketPriceFromDepartAndArrival(TicketPricePage.java:18)
-	at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.TC13(TC04_TestNavigationsToBookTicketPage.java:88)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider#TC07_TC08</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1] depends on not successfully finished methods
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage#precondition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.logigear.selenium.test.railway.Sample_LoginTest#TC02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.logigear.selenium.test.railway.TC01_TestFunctionLogin#precondition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount#TC09</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

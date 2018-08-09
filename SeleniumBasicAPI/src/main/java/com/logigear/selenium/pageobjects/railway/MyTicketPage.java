@@ -2,7 +2,6 @@ package com.logigear.selenium.pageobjects.railway;
 
 import java.util.Arrays;
 import java.util.List;
-import java.lang.System;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

@@ -3,7 +3,6 @@ package com.logigear.selenium.pageobjects.railway;
 import org.openqa.selenium.By;
 
 import com.logigear.selenium.constant.Constant;
-import com.logigear.selenium.pageobjects.railway.BookTicketPage;
 
 public class TimetablePage extends GeneralPage {
 

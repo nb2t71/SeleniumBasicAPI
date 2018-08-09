@@ -3,11 +3,10 @@ package com.logigear.selenium.test.railway;
 import static org.testng.Assert.assertEquals;
 
 import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -16,8 +15,6 @@ import com.logigear.selenium.common.Utilities;
 import com.logigear.selenium.constant.Constant;
 import com.logigear.selenium.pageobjects.railway.HomePage;
 import com.logigear.selenium.pageobjects.railway.RegisterPage;
-import com.logigear.selenium.underground.thread.Context;
-import com.logigear.selenium.underground.thread.MyThreadLocal;
 import com.logigear.selenium.utilities.gmail.gmailApi;
 
 /**
@@ -32,13 +29,37 @@ public class Precondition_Invoked {
 //	ThreadLocal threadLocal;
 //	Context context;
 
-	@Parameters({"browser", "runmode", "huburl"})
+/*//	public WebDriver driver;
+//    public WebDriverWait wait;
+// 
+//    public WebDriver getDriver() {
+//        return driver;
+//    }
+
+	@BeforeClass
+	public void setup() {
+		System.out.println("Run BeforeClass");
+
+//        //Create a Chrome driver. All test classes use this.
+//        driver = new ChromeDriver();
+// 
+//        //Create a wait. All test classes use this.
+//        wait = new WebDriverWait(driver,15);
+// 
+//        //Maximize Window
+//        driver.manage().window().maximize();
+	}
+
+	@AfterClass
+	public void teardown() {
+		System.out.println("Run AfterClass");
+//        driver.quit();
+	}*/
+
+	@Parameters({ "browser", "runmode", "huburl" })
 	@BeforeMethod(alwaysRun = true)
-	public void beforeMethod(
-			@Optional("chrome") String browser
-			, @Optional("runmode") String runMode
-			, @Optional("hubURL") String hubURL
-			) throws MalformedURLException {
+	public void beforeMethod(@Optional("chrome") String browser, @Optional("runmode") String runMode,
+			@Optional("hubURL") String hubURL) throws MalformedURLException {
 		System.out.println("Run beforeMethod");
 
 //		threadLocal = new ThreadLocal();

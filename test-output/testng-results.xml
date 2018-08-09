@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="3" ignored="0" total="5" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="37873" started-at="2018-08-07T04:45:22Z" finished-at="2018-08-07T04:46:00Z">
+  <suite name="Test Suite" duration-ms="55012" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:52:22Z">
     <groups>
     </groups>
-    <test name="1st Test" duration-ms="37873" started-at="2018-08-07T04:45:22Z" finished-at="2018-08-07T04:46:00Z">
-      <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2018-08-07T04:45:22Z" finished-at="2018-08-07T04:45:22Z">
+    <test name="1st Test" duration-ms="55012" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:52:22Z">
+      <class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
           <params>
             <param index="0">
               <value>
@@ -16,7 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[remote]]>
+                <![CDATA[local]]>
               </value>
             </param>
             <param index="2">
@@ -28,164 +28,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1]" name="precondition" duration-ms="11095" started-at="2018-08-07T04:45:22Z" finished-at="2018-08-07T04:45:33Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Message is not displayed as expected expected [Thank you for registering your account] but found [Create account]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.logigear.selenium.test.railway.Precondition_Invoked.preconditionCreateAndActiveAccount(Precondition_Invoked.java:107)
-at com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition(TC03_TestFunctionChangePassword_DataProvider.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="precondition" duration-ms="47374" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:52:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-07T04:45:33Z" finished-at="2018-08-07T04:45:33Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-09T06:52:15Z" finished-at="2018-08-09T06:52:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-        <test-method status="SKIP" signature="TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1]" name="TC07_TC08" duration-ms="0" started-at="2018-08-07T04:45:33Z" data-provider="data" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition" finished-at="2018-08-07T04:45:33Z">
-          <exception class="java.lang.Throwable">
+        <test-method status="FAIL" signature="TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="TC01_TC02_TC03_TC04_TC06" duration-ms="6967" started-at="2018-08-09T06:52:15Z" depends-on-methods="com.logigear.selenium.test.railway.TC01_TestFunctionLogin.precondition" finished-at="2018-08-09T06:52:22Z">
+          <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1] depends on not successfully finished methods]]>
+              <![CDATA[com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@271053e1] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC07_TC08 -->
-      </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider -->
-      <class name="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2018-08-07T04:45:22Z" finished-at="2018-08-07T04:45:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[remote]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://localhost:4444/wd/hub]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="precondition" duration-ms="29380" started-at="2018-08-07T04:45:22Z" finished-at="2018-08-07T04:45:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-07T04:45:51Z" finished-at="2018-08-07T04:45:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMetohod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-08-07T04:45:51Z" finished-at="2018-08-07T04:45:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[remote]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://localhost:4444/wd/hub]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC13()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="TC13" duration-ms="6990" started-at="2018-08-07T04:45:51Z" depends-on-methods="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition" finished-at="2018-08-07T04:45:58Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()='Nha Trang to Phan Thiáº¿t']/../.."}
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LGVN14736', ip: '192.168.170.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true, webdriver.remote.sessionid: bdd3fdf100105c2d62a616d5221...}
-Session ID: bdd3fdf100105c2d62a616d5221e2516
-*** Element info: {Using=xpath, value=//li[text()='Nha Trang to Phan Thiáº¿t']/../..}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()='Nha Trang to Phan Thiáº¿t']/../.."}
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LGVN14736', ip: '192.168.170.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true, webdriver.remote.sessionid: bdd3fdf100105c2d62a616d5221...}
-Session ID: bdd3fdf100105c2d62a616d5221e2516
-*** Element info: {Using=xpath, value=//li[text()='Nha Trang to Phan Thiáº¿t']/../..}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-at com.logigear.selenium.pageobjects.railway.TicketPricePage.openTicketPriceFromDepartAndArrival(TicketPricePage.java:18)
-at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.TC13(TC04_TestNavigationsToBookTicketPage.java:88)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+              <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
+at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
+at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1163)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:616)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -195,11 +56,11 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC13 -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-07T04:45:51Z" finished-at="2018-08-07T04:45:51Z">
+        </test-method> <!-- TC01_TC02_TC03_TC04_TC06 -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-09T06:52:15Z" finished-at="2018-08-09T06:52:15Z">
           <params>
             <param index="0">
               <value>
@@ -208,7 +69,7 @@ at java.lang.Thread.run(Thread.java:748)
             </param>
             <param index="1">
               <value>
-                <![CDATA[remote]]>
+                <![CDATA[local]]>
               </value>
             </param>
             <param index="2">
@@ -220,57 +81,19 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC12()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="TC12" duration-ms="8206" started-at="2018-08-07T04:45:51Z" depends-on-methods="com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.precondition" finished-at="2018-08-07T04:45:59Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+      </class> <!-- com.logigear.selenium.test.railway.TC01_TestFunctionLogin -->
+      <class name="com.logigear.selenium.test.railway.Sample_LoginTest">
+        <test-method status="FAIL" signature="TC01()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="TC01" duration-ms="25257" started-at="2018-08-09T06:51:27Z" description="TC01 - User can log into Railway with valid username and password" finished-at="2018-08-09T06:51:52Z">
+          <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']"}
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LGVN14736', ip: '192.168.170.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true, webdriver.remote.sessionid: e14f7d1e08255c5e5b7641970f3...}
-Session ID: e14f7d1e08255c5e5b7641970f33ab6f
-*** Element info: {Using=xpath, value=//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']}]]>
+              <![CDATA[com.logigear.selenium.test.railway.Sample_LoginTest cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']"}
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LGVN14736', ip: '192.168.170.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\THAOTH~1.NGU\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true, webdriver.remote.sessionid: e14f7d1e08255c5e5b7641970f3...}
-Session ID: e14f7d1e08255c5e5b7641970f33ab6f
-*** Element info: {Using=xpath, value=//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-at com.logigear.selenium.pageobjects.railway.GeneralPage.getTabTimetable(GeneralPage.java:57)
-at com.logigear.selenium.pageobjects.railway.GeneralPage.gotoTimetablePage(GeneralPage.java:99)
-at com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage.TC12(TC04_TestNavigationsToBookTicketPage.java:53)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+              <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.Sample_LoginTest cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
+at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
+at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1163)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:616)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -280,19 +103,92 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC12 -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-07T04:45:58Z" finished-at="2018-08-07T04:45:58Z">
+        </test-method> <!-- TC01 -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC02()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="TC02" duration-ms="30840" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-09T06:51:59Z" finished-at="2018-08-09T06:51:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage@402a079c]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-07T04:46:00Z" finished-at="2018-08-07T04:46:00Z">
+      </class> <!-- com.logigear.selenium.test.railway.Sample_LoginTest -->
+      <class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@2f8f5f62]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC09()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@2f8f5f62]" name="TC09" duration-ms="29471" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09 -->
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@2f8f5f62]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-09T06:51:57Z" finished-at="2018-08-09T06:51:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
-      </class> <!-- com.logigear.selenium.test.railway.TC04_TestNavigationsToBookTicketPage -->
+      </class> <!-- com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount -->
     </test> <!-- 1st Test -->
   </suite> <!-- Test Suite -->
 </testng-results>

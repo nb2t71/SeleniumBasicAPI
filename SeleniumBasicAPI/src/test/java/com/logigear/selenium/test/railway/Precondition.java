@@ -15,8 +15,6 @@ import com.logigear.selenium.common.Utilities;
 import com.logigear.selenium.constant.Constant;
 import com.logigear.selenium.pageobjects.railway.HomePage;
 import com.logigear.selenium.pageobjects.railway.RegisterPage;
-import com.logigear.selenium.underground.thread.Context;
-import com.logigear.selenium.underground.thread.MyThreadLocal;
 import com.logigear.selenium.utilities.gmail.gmailApi;
 
 /**
@@ -71,7 +69,7 @@ public class Precondition {
 
 		Constant.WEBDRIVER.quit();
 //		threadLocal.remove();
-		MyThreadLocal.unset();
+//		MyThreadLocal.unset();
 
 	}
 
