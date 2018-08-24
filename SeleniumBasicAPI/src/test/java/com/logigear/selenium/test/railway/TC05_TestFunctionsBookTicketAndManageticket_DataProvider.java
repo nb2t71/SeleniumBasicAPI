@@ -6,11 +6,12 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.logigear.selenium.constant.Constant;
-import com.logigear.selenium.pageobjects.railway.BookTicketPage;
-import com.logigear.selenium.pageobjects.railway.HomePage;
-import com.logigear.selenium.pageobjects.railway.LoginPage;
-import com.logigear.selenium.pageobjects.railway.MyTicketPage;
+import com.logigear.selenium.page.railway.BookTicketPage;
+import com.logigear.selenium.page.railway.HomePage;
+import com.logigear.selenium.page.railway.LoginPage;
+import com.logigear.selenium.page.railway.MyTicketPage;
+import com.logigear.selenium.test.Precondition_Invoked;
+import com.logigear.selenium.utilities.constant.Constant;
 
 /**
  * @author thao.thanh.nguyen This also involves TC10 - User can book 1 ticket at

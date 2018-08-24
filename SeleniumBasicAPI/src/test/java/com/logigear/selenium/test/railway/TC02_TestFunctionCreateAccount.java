@@ -4,10 +4,11 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import com.logigear.selenium.common.Utilities;
-import com.logigear.selenium.constant.Constant;
-import com.logigear.selenium.pageobjects.railway.HomePage;
-import com.logigear.selenium.pageobjects.railway.RegisterPage;
+import com.logigear.selenium.page.railway.HomePage;
+import com.logigear.selenium.page.railway.RegisterPage;
+import com.logigear.selenium.test.Precondition_Invoked;
+import com.logigear.selenium.utilities.common.Utilities;
+import com.logigear.selenium.utilities.constant.Constant;
 
 /**
  * @author thao.thanh.nguyen This test involves TC09 - User can't create account

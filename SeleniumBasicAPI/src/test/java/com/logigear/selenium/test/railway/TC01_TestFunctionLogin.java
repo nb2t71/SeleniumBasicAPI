@@ -4,9 +4,10 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import com.logigear.selenium.constant.Constant;
-import com.logigear.selenium.pageobjects.railway.HomePage;
-import com.logigear.selenium.pageobjects.railway.LoginPage;
+import com.logigear.selenium.page.railway.HomePage;
+import com.logigear.selenium.page.railway.LoginPage;
+import com.logigear.selenium.test.Precondition_Invoked;
+import com.logigear.selenium.utilities.constant.Constant;
 
 /**
  * @author thao.thanh.nguyen This test involves TC01 - User can log into Railway

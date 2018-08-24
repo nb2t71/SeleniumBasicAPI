@@ -25,8 +25,18 @@
       </plugin>
     </plugins>
   </build>
+  
   <dependencies>
-
+  
+  		<!-- SELENIUM -->
+  		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.12.0</version>
+		</dependency>
+  		
+  		<!-- TESTNG -->
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -34,13 +44,7 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.12.0</version>
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
 		<!-- <dependency> -->
 		<!-- <groupId>org.seleniumhq.selenium</groupId> -->
@@ -66,6 +70,7 @@
 		<!-- <version>3.12.0</version> -->
 		<!-- </dependency> -->
 
+		<!-- GOOGLE API -->
 		<!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-gmail -->
 		<dependency>
 			<groupId>com.google.apis</groupId>
@@ -98,7 +103,7 @@
 		</dependency>
 		
 		
-		<!--Test reporting library - extent 2.X-->
+		<!--TEST REPORTING LIBRARY - extent 2.X-->
 		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 		<dependency>
 		    <groupId>com.relevantcodes</groupId>
@@ -106,7 +111,7 @@
 		    <version>2.41.2</version>
 		</dependency>
 		
-		 <!--Test reporting library - extent 3.X-->
+		 <!--TEST REPORTING LIBRARY - extent 3.X-->
 		<dependency>
 		     <groupId>com.aventstack</groupId>
 		     <artifactId>extentreports</artifactId>

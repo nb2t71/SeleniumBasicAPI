@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+<testng-results skipped="4" failed="4" ignored="0" total="10" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="55012" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:52:22Z">
+  <suite name="Test Suite" duration-ms="335948" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:23:24Z">
     <groups>
     </groups>
-    <test name="1st Test" duration-ms="55012" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:52:22Z">
-      <class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+    <test name="1st Test" duration-ms="335948" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:23:24Z">
+      <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@8b87145]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2018-08-13T04:20:32Z" finished-at="2018-08-13T04:20:32Z">
           <params>
             <param index="0">
               <value>
@@ -16,7 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[local]]>
+                <![CDATA[remote]]>
               </value>
             </param>
             <param index="2">
@@ -28,23 +28,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="precondition" duration-ms="47374" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:52:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-09T06:52:15Z" finished-at="2018-08-09T06:52:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMetohod -->
-        <test-method status="FAIL" signature="TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="TC01_TC02_TC03_TC04_TC06" duration-ms="6967" started-at="2018-08-09T06:52:15Z" depends-on-methods="com.logigear.selenium.test.railway.TC01_TestFunctionLogin.precondition" finished-at="2018-08-09T06:52:22Z">
+        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@8b87145]" name="precondition" duration-ms="166534" started-at="2018-08-13T04:20:32Z" finished-at="2018-08-13T04:23:19Z">
           <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
+              <![CDATA[com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
-at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
-at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
+              <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
 at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1163)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:616)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -59,8 +51,53 @@ at java.lang.Thread.run(Thread.java:748)
           </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_TC02_TC03_TC04_TC06 -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@4b53f538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-09T06:52:15Z" finished-at="2018-08-09T06:52:15Z">
+        </test-method> <!-- precondition -->
+        <test-method status="SKIP" signature="TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@8b87145]" name="TC07_TC08" duration-ms="0" started-at="2018-08-13T04:23:19Z" data-provider="data" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider.precondition" finished-at="2018-08-13T04:23:19Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@8b87145] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@8b87145] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_TC08 -->
+      </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider -->
+      <class name="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword">
+        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07]" name="precondition" duration-ms="80138" started-at="2018-08-13T04:22:04Z" finished-at="2018-08-13T04:23:24Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
+at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1163)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:616)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-08-13T04:22:04Z" finished-at="2018-08-13T04:22:04Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +106,7 @@ at java.lang.Thread.run(Thread.java:748)
             </param>
             <param index="1">
               <value>
-                <![CDATA[local]]>
+                <![CDATA[remote]]>
               </value>
             </param>
             <param index="2">
@@ -81,17 +118,55 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-      </class> <!-- com.logigear.selenium.test.railway.TC01_TestFunctionLogin -->
+        <test-method status="SKIP" signature="TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07]" name="TC08" duration-ms="0" started-at="2018-08-13T04:23:24Z" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition" finished-at="2018-08-13T04:23:24Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC03_TestFunctionChangePassword.TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC03_TestFunctionChangePassword.TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08 -->
+        <test-method status="SKIP" signature="TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07]" name="TC07_TC08" duration-ms="1" started-at="2018-08-13T04:23:24Z" depends-on-methods="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword.precondition" finished-at="2018-08-13T04:23:24Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC03_TestFunctionChangePassword.TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC03_TestFunctionChangePassword.TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_TC08 -->
+      </class> <!-- com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword -->
       <class name="com.logigear.selenium.test.railway.Sample_LoginTest">
-        <test-method status="FAIL" signature="TC01()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="TC01" duration-ms="25257" started-at="2018-08-09T06:51:27Z" description="TC01 - User can log into Railway with valid username and password" finished-at="2018-08-09T06:51:52Z">
+        <test-method status="FAIL" signature="TC01()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@7ba18f1b]" name="TC01" duration-ms="162771" started-at="2018-08-13T04:17:48Z" description="TC01 - User can log into Railway with valid username and password" finished-at="2018-08-13T04:20:31Z">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[com.logigear.selenium.test.railway.Sample_LoginTest cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.Sample_LoginTest cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
-at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
-at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
+at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
 at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1163)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:616)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -107,7 +182,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01 -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@7ba18f1b]" name="beforeMethod" is-config="true" duration-ms="29" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:17:48Z">
           <params>
             <param index="0">
               <value>
@@ -116,7 +191,7 @@ at java.lang.Thread.run(Thread.java:748)
             </param>
             <param index="1">
               <value>
-                <![CDATA[local]]>
+                <![CDATA[remote]]>
               </value>
             </param>
             <param index="2">
@@ -128,7 +203,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@7ba18f1b]" name="beforeMethod" is-config="true" duration-ms="29" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:17:48Z">
           <params>
             <param index="0">
               <value>
@@ -137,7 +212,7 @@ at java.lang.Thread.run(Thread.java:748)
             </param>
             <param index="1">
               <value>
-                <![CDATA[local]]>
+                <![CDATA[remote]]>
               </value>
             </param>
             <param index="2">
@@ -149,17 +224,41 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC02()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="TC02" duration-ms="30840" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:58Z">
+        <test-method status="PASS" signature="TC02()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@7ba18f1b]" name="TC02" duration-ms="253194" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:22:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02 -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@61ca2dfa]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-09T06:51:59Z" finished-at="2018-08-09T06:51:59Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.Sample_LoginTest@7ba18f1b]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-13T04:22:04Z" finished-at="2018-08-13T04:22:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->
       </class> <!-- com.logigear.selenium.test.railway.Sample_LoginTest -->
-      <class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@2f8f5f62]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:27Z">
+      <class name="com.logigear.selenium.test.railway.TC01_TestFunctionLogin">
+        <test-method status="FAIL" signature="precondition()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@2f8f5f62]" name="precondition" duration-ms="324852" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:23:13Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
+at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1163)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:616)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@2f8f5f62]" name="beforeMethod" is-config="true" duration-ms="29" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:17:48Z">
           <params>
             <param index="0">
               <value>
@@ -168,7 +267,7 @@ at java.lang.Thread.run(Thread.java:748)
             </param>
             <param index="1">
               <value>
-                <![CDATA[local]]>
+                <![CDATA[remote]]>
               </value>
             </param>
             <param index="2">
@@ -180,11 +279,53 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC09()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@2f8f5f62]" name="TC09" duration-ms="29471" started-at="2018-08-09T06:51:27Z" finished-at="2018-08-09T06:51:56Z">
+        <test-method status="SKIP" signature="TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@2f8f5f62]" name="TC01_TC02_TC03_TC04_TC06" duration-ms="0" started-at="2018-08-13T04:23:14Z" depends-on-methods="com.logigear.selenium.test.railway.TC01_TestFunctionLogin.precondition" finished-at="2018-08-13T04:23:14Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC01_TestFunctionLogin.TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@2f8f5f62] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC01_TestFunctionLogin.TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@2f8f5f62] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_TC02_TC03_TC04_TC06 -->
+      </class> <!-- com.logigear.selenium.test.railway.TC01_TestFunctionLogin -->
+      <class name="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5fcd892a]" name="beforeMethod" is-config="true" duration-ms="29" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:17:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC09()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5fcd892a]" name="TC09" duration-ms="257050" started-at="2018-08-13T04:17:48Z" finished-at="2018-08-13T04:22:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC09 -->
-        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@2f8f5f62]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-09T06:51:57Z" finished-at="2018-08-09T06:51:57Z">
+        <test-method status="PASS" signature="afterMetohod()[pri:0, instance:com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount@5fcd892a]" name="afterMetohod" is-config="true" duration-ms="0" started-at="2018-08-13T04:23:12Z" finished-at="2018-08-13T04:23:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetohod -->

@@ -4,10 +4,11 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import com.logigear.selenium.common.Utilities;
-import com.logigear.selenium.constant.Constant;
-import com.logigear.selenium.pageobjects.railway.HomePage;
-import com.logigear.selenium.pageobjects.railway.LoginPage;
+import com.logigear.selenium.page.railway.HomePage;
+import com.logigear.selenium.page.railway.LoginPage;
+import com.logigear.selenium.test.Precondition_Invoked;
+import com.logigear.selenium.utilities.common.Utilities;
+import com.logigear.selenium.utilities.constant.Constant;
 import com.swtestacademy.selenium.utilities.extentreports.ExtentTestManager;
 
 public class Sample_LoginTest extends Precondition_Invoked {

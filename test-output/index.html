@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">10 methods, 4 failed,  4 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,10 +107,49 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" hash-for-method="TC01_TC02_TC03_TC04_TC06">TC01_TC02_TC03_TC04_TC06</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" hash-for-method="precondition">precondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword" hash-for-method="precondition">precondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider" hash-for-method="precondition">precondition</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods skipped suite-Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods skipped suite-Test_Suite"> (show)</a> <!-- show-methods skipped suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Test_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" hash-for-method="TC01_TC02_TC03_TC04_TC06">TC01_TC02_TC03_TC04_TC06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider" hash-for-method="TC07_TC08">TC07_TC08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword" hash-for-method="TC07_TC08">TC07_TC08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword" hash-for-method="TC08">TC08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,11 +168,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount" hash-for-method="TC09">TC09</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.logigear.selenium.test.railway.TC01_TestFunctionLogin" hash-for-method="precondition">precondition</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite -->
                   </li>
                 </ul>
@@ -149,17 +183,17 @@
           <div class="suite-Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</span>
+              <span class="class-name">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01_TC02_TC03_TC04_TC06">
-                  </a> <!-- TC01_TC02_TC03_TC04_TC06 -->
-                  <span class="method-name">TC01_TC02_TC03_TC04_TC06</span>
-                  <div class="stack-trace">java.lang.ClassCastException: com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
-	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
-	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
+                  <a name="precondition">
+                  </a> <!-- precondition -->
+                  <span class="method-name">precondition</span>
+                  <div class="stack-trace">java.lang.ClassCastException: com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -181,8 +215,8 @@
                   </a> <!-- TC01 -->
                   <span class="method-name">TC01</span>
                   <div class="stack-trace">java.lang.ClassCastException: com.logigear.selenium.test.railway.Sample_LoginTest cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
-	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:39)
-	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:27)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -194,9 +228,32 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test_Suite-class-failed -->
-          <div class="suite-Test_Suite-class-passed">
+          <div class="suite-Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="precondition">
+                  </a> <!-- precondition -->
+                  <span class="method-name">precondition</span>
+                  <div class="stack-trace">java.lang.ClassCastException: com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-failed -->
+          <div class="suite-Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -205,10 +262,94 @@
                   <a name="precondition">
                   </a> <!-- precondition -->
                   <span class="method-name">precondition</span>
+                  <div class="stack-trace">java.lang.ClassCastException: com.logigear.selenium.test.railway.TC01_TestFunctionLogin cannot be cast to com.swtestacademy.selenium.driver.TLDriverFactory
+	at com.swtestacademy.selenium.utilities.listeners.Retry.extendReportsFailOperations(Retry.java:38)
+	at com.swtestacademy.selenium.utilities.listeners.Retry.retry(Retry.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
+          </div> <!-- suite-Test_Suite-class-failed -->
+          <div class="suite-Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_TC08">
+                  </a> <!-- TC07_TC08 -->
+                  <span class="method-name">TC07_TC08</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC03_TestFunctionChangePassword_DataProvider.TC07_TC08(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider@8b87145] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-skipped -->
+          <div class="suite-Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_TC08">
+                  </a> <!-- TC07_TC08 -->
+                  <span class="method-name">TC07_TC08</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC03_TestFunctionChangePassword.TC07_TC08()[pri:2, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08">
+                  </a> <!-- TC08 -->
+                  <span class="method-name">TC08</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC03_TestFunctionChangePassword.TC08()[pri:1, instance:com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword@b9afc07] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-skipped -->
+          <div class="suite-Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_TC02_TC03_TC04_TC06">
+                  </a> <!-- TC01_TC02_TC03_TC04_TC06 -->
+                  <span class="method-name">TC01_TC02_TC03_TC04_TC06</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC01_TestFunctionLogin.TC01_TC02_TC03_TC04_TC06()[pri:0, instance:com.logigear.selenium.test.railway.TC01_TestFunctionLogin@2f8f5f62] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-skipped -->
           <div class="suite-Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -248,20 +389,22 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test Suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite thread-count=&quot;6&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.swtestacademy.selenium.driver.InvokedMethodListener&quot;/&gt;
     &lt;listener class-name=&quot;com.swtestacademy.selenium.utilities.listeners.TestListener&quot;/&gt;
     &lt;listener class-name=&quot;com.swtestacademy.selenium.utilities.listeners.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;4&quot; name=&quot;1st Test&quot; parallel=&quot;methods&quot;&gt;
-    &lt;parameter name=&quot;runmode&quot; value=&quot;local&quot;/&gt;
+    &lt;parameter name=&quot;runmode&quot; value=&quot;remote&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;huburl&quot; value=&quot;http://localhost:4444/wd/hub&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.logigear.selenium.test.railway.Sample_LoginTest&quot;/&gt;
       &lt;class name=&quot;com.logigear.selenium.test.railway.TC01_TestFunctionLogin&quot;/&gt;
       &lt;class name=&quot;com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount&quot;/&gt;
+      &lt;class name=&quot;com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider&quot;/&gt;
+      &lt;class name=&quot;com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- 1st Test --&gt;
 &lt;/suite&gt; &lt;!-- Test Suite --&gt;
@@ -275,7 +418,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">1st Test (3 classes)</span>
+                <span class="test-name">1st Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,32 +444,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'precondition')
 data.setCell(0, 2, 'com.logigear.selenium.test.railway.TC01_TestFunctionLogin')
-data.setCell(0, 3, 47374);
+data.setCell(0, 3, 324852);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC02')
-data.setCell(1, 2, 'com.logigear.selenium.test.railway.Sample_LoginTest')
-data.setCell(1, 3, 30840);
+data.setCell(1, 1, 'TC09')
+data.setCell(1, 2, 'com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount')
+data.setCell(1, 3, 257050);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC09')
-data.setCell(2, 2, 'com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount')
-data.setCell(2, 3, 29471);
+data.setCell(2, 1, 'TC02')
+data.setCell(2, 2, 'com.logigear.selenium.test.railway.Sample_LoginTest')
+data.setCell(2, 3, 253194);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC01')
-data.setCell(3, 2, 'com.logigear.selenium.test.railway.Sample_LoginTest')
-data.setCell(3, 3, 25257);
+data.setCell(3, 1, 'precondition')
+data.setCell(3, 2, 'com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider')
+data.setCell(3, 3, 166534);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC01_TC02_TC03_TC04_TC06')
-data.setCell(4, 2, 'com.logigear.selenium.test.railway.TC01_TestFunctionLogin')
-data.setCell(4, 3, 6967);
+data.setCell(4, 1, 'TC01')
+data.setCell(4, 2, 'com.logigear.selenium.test.railway.Sample_LoginTest')
+data.setCell(4, 3, 162771);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'precondition')
+data.setCell(5, 2, 'com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword')
+data.setCell(5, 3, 80138);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC07_TC08')
+data.setCell(6, 2, 'com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC07_TC08')
+data.setCell(7, 2, 'com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC01_TC02_TC03_TC04_TC06')
+data.setCell(8, 2, 'com.logigear.selenium.test.railway.TC01_TestFunctionLogin')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC08')
+data.setCell(9, 2, 'com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword')
+data.setCell(9, 3, 0);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 20 minutes</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -354,36 +517,33 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome, local, http://localhost:4444/wd/hub)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.logigear.selenium.test.railway.Sample_LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome, local, http://localhost:4444/wd/hub)</span>
+                <span class="method-name">beforeMethod(chrome, remote, http://localhost:4444/wd/hub)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome, local, http://localhost:4444/wd/hub)</span>
+                <span class="method-name">beforeMethod(chrome, remote, http://localhost:4444/wd/hub)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.Sample_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome, local, http://localhost:4444/wd/hub)</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-name">beforeMethod(chrome, remote, http://localhost:4444/wd/hub)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome, remote, http://localhost:4444/wd/hub)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC09</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -392,53 +552,64 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">precondition</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.Sample_LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC02</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword_DataProvider</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome, remote, http://localhost:4444/wd/hub)</span>
+                <span class="method-start">163722 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">precondition</span>
+                <span class="method-start">163725 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.logigear.selenium.test.railway.Sample_LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMetohod</span>
+                <span class="method-start">255692 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.logigear.selenium.test.railway.TC03_TestFunctionChangePassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome, remote, http://localhost:4444/wd/hub)</span>
+                <span class="method-start">255694 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">precondition</span>
+                <span class="method-start">255695 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.logigear.selenium.test.railway.TC02_TestFunctionCreateAccount</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMetohod</span>
-                <span class="method-start">30424 ms</span>
+                <span class="method-start">324004 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.logigear.selenium.test.railway.Sample_LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMetohod</span>
-                <span class="method-start">32117 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.logigear.selenium.test.railway.TC01_TestFunctionLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMetohod</span>
-                <span class="method-start">47991 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome, local, http://localhost:4444/wd/hub)</span>
-                <span class="method-start">48007 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TC01_TC02_TC03_TC04_TC06</span>
-                <span class="method-start">48007 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
